@@ -19,7 +19,11 @@
   <packaging>pom</packaging>
   <!-- FIXME change it to the project's website ||||<url>http://www.example.com</url> -->
   <modules>
-	<module>microservice-product</module>  
+	<module>microservice-product</module>
+	<module>microservice-configs</module>
+	<module>microservice-users</module>
+	<module>microservice-gataway2</module>
+	<module>microservice-eurekas</module>
   </modules>
 
   <properties>
