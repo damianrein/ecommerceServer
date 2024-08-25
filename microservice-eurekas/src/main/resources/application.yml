@@ -1,0 +1,15 @@
+server: 
+  port: 8761
+  
+spring:
+  application:
+    name: microservice-eurekas
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaulZone: http://localhost:${server.port}/eureka
