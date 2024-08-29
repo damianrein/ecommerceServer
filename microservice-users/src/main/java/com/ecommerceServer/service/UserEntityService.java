@@ -27,4 +27,8 @@ public class UserEntityService {
 	public void deleteUserEntity(Long id) {
 		repo.deleteById(id);
 	}
+	
+	public void createUserEntity(UserEntity user) {
+		repo.save(user);
+	}
 }
