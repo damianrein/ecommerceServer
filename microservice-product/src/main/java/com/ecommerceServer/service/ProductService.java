@@ -1,5 +1,7 @@
 package com.ecommerceServer.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.ecommerceServer.dtos.ProductDto;
@@ -18,4 +20,10 @@ public class ProductService {
 	public void deleteProductById(Long id) {
 		repo.deleteById(id);
 	}
+	
+	public List<Product> getAllProducts() {
+		return repo.findAll();
+	}
+	
+	
 }
