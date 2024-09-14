@@ -24,6 +24,8 @@
 	<module>microservice-users</module>
 	<module>microservice-gataway2</module>
 	<module>microservice-eurekas</module>
+	<module>microservice-cart</module>
+	<module>microservice-files</module>
   </modules>
 
   <properties>
