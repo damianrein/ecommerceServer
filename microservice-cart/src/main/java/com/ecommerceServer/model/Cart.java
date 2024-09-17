@@ -5,5 +5,5 @@ import jakarta.persistence.Entity;
 @Entity
 public class Cart {
 
-	
+	private Long id;
 }
