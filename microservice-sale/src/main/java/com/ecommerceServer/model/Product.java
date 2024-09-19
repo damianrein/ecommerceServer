@@ -17,6 +17,7 @@ public class Product {
 	@NotNull(message = "This field cannot be null")
 	@Min(value = 0, message = "Price cannot be less than zero")
 	private Double price;
+	
 	public String getName() {
 		return name;
 	}
