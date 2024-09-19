@@ -34,7 +34,6 @@ public class UserEntity implements UserDetails{
 	
 	public UserEntity(Long id, String name, String lastName, String email, String password, boolean accountNonLocked,
 			boolean accountNonExpired, boolean credentialsNonExpired, boolean enable) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.lastName = lastName;

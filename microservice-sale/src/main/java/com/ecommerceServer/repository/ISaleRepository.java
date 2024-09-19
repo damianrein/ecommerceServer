@@ -6,4 +6,5 @@ import com.ecommerceServer.model.Sale;
 
 public interface ISaleRepository extends JpaRepository<Sale, Long> {
 
+	
 }
