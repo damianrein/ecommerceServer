@@ -26,7 +26,8 @@
 	<module>microservice-eurekas</module>
 	<module>microservice-cart</module>
 	<module>microservice-files</module>
-	<module>microservice-sale</module>
+	<module>microservice-reviews</module>
+	<module>microservice-order</module>
   </modules>
 
   <properties>
