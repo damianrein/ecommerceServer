@@ -20,4 +20,20 @@ public class ReviewService {
 	public List<Review> productReviews(Long id){
 		return repo.findByProductId(id);
 	}
+	
+	public List<Review> reviewByUser(Long id){
+		return repo.findByUserId(id);
+	}
+	
+	public void createReview(Review r) {
+		repo.save(r);
+	}
+	
+	public List<Review> allReview(){
+		return repo.findAll();
+	}
+	
+	public void deleteOneById(String id) {
+		repo.deleteById(id);
+	}
 }
