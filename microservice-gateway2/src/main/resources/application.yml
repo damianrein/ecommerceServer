@@ -1,34 +1,5 @@
-server:
-  port: 8080
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      default-zone: http://localhost:8761/microservice-eurekas
-    instance:
-      hostname: localhost
-
 spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: microservice-users
-          uri: lb://microservice-users
-          predicates:
-            - Path=/users/**
-        - id: microservice-product
-          uri: lb://microservice-product
-          predicates:
-            - Path=/product/**
-        - id: microservice-order
-          uri: lb://microservice-order
-          predicates:
-            - Path=/order/**
-        - id: microservice-reviews
-          uri: lb://microservice-reviews
-          predicates:
-            - Path=/reviews/**
+  application:
+    name: msvc-gateway
+  config:
+    import: 'optional:configserver:http://localhost:8888'

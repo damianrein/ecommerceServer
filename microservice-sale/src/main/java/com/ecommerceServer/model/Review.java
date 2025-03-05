@@ -11,6 +11,7 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Review {
@@ -18,13 +19,16 @@ public class Review {
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private String id;
+	@NotBlank
 	private Long userId;
+	@NotBlank
 	private Long productId;
 	@Column(updatable = false)
 	private LocalDateTime creatAt;
 	private String message;
 	@Enumerated(EnumType.ORDINAL)
 	@Column(updatable = false)
+	@NotBlank
 	private Valoration valoration;
 	
 	public Review() {}
